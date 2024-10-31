@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+    <form
+        action="https://formspree.io/f/xpwzpdjg"
+        method="POST"
+    >
+<!-- <form action="" method="post"> Connect to formspree.io-->
+        <fieldset>
+            <legend>Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" placeholder="First Name" name="first-name" id="first-name"  required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" placeholder="Last Name" id="last-name" name="last-name" required>
+
+            <label for="program">Program: </label>
+            <input type="text" placeholder="Program" id="program" name="program">
+
+            <div class="radio-group">
+                <p>Available Time for Picking Up Grocery:</p>
+                <input type="radio" id="morning" name="available-time" value="morning">
+                <label for="morning">Morning</label>
+
+                <input type="radio" id="afternoon" name="available-time" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+
+                <input type="radio" id="evening" name="available-time" value="evening">
+                <label for="evening">Evening</label>
+
+                <input type="radio" id="weekend" name="available-time" value="weekend">
+                <label for="weekend">Weekend</label>
+            </div>
+
+            <label for="pickup">Pickup from</label>
+                <select name="pickup" id="pickup" required>
+                    <option value="" selected="" disabled="">Select</option>
+                    <option value="North Quad">Front Desk</option>
+                    <option value="Mason Hall">Customer Care</option>
+                    <option value="UMMA">Shipping / Receiving</option>
+                </select>
+
+            <label for="feedback">Feedback</label>
+            <textarea rows="5" name="feedback" id="feedback" placeholder="Please leave us your feedback!" required=""></textarea>
+            <div>
+                <p>If you want to repeat this order again, which days do you want?</p>
+                <input type="checkbox" name="day" value="Friday"> Friday
+                <input type="checkbox" name="day" value="Saturday"> Saturday
+                <input type="checkbox" name="day" value="Sunday"> Sunday
+            </div>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
